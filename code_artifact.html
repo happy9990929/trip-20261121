@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>山海奇幻行｜九份・基隆・台北 兩日漫遊 (2026/11/21-11/22)</title>
+  <!-- 引入 Google Fonts 思源黑體 Noto Sans TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- 引入 Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#F4EFE6',       // 宣紙米白
+            card: '#FAF7F2',        // 卡片淺米白
+            charcoal: '#2B2825',    // 深木炭黑
+            crimson: '#C83E31',     // 燈籠朱紅
+            crimsonDark: '#A32C21', // 朱紅深色
+            amber: '#D99B26',       // 湯屋琥珀金
+            indigoNight: '#1E293B', // 夜幕藏青
+            bamboo: '#3A5A40',      // 竹葉青
+            wood: '#5C4033',        // 復古木牌色
+            borderWarm: '#D6CBB9'   // 復古邊框色
+          },
+          fontFamily: {
+            sans: ['"Noto Sans TC"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* 全域基本設定：確保內文字級至少 16px，行高舒適，嚴禁任何漸層 */
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background-color: #F4EFE6;
+      color: #2B2825;
+      font-size: 16px;
+      line-height: 1.75;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* 復古雙線邊框裝飾 */
+    .vintage-double-border {
+      border: 2px solid #2B2825;
+      box-shadow: inset 0 0 0 3px #FAF7F2, inset 0 0 0 4px #D6CBB9;
+    }
+
+    .crimson-double-border {
+      border: 2px solid #C83E31;
+      box-shadow: inset 0 0 0 3px #FAF7F2, inset 0 0 0 4px #C83E31;
+    }
+
+    /* 傳統印章標籤 */
+    .stamp-badge {
+      border: 2px solid #C83E31;
+      color: #C83E31;
+      background-color: #FAF7F2;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+
+    /* 燈籠微擺動動畫 */
+    @keyframes lanternSway {
+      0%, 100% { transform: rotate(-2.5deg); }
+      50% { transform: rotate(2.5deg); }
+    }
+    .lantern-sway {
+      transform-origin: top center;
+      animation: lanternSway 4s ease-in-out infinite;
+    }
+    .lantern-sway-delay {
+      transform-origin: top center;
+      animation: lanternSway 4.5s ease-in-out 1.2s infinite;
+    }
+
+    /* 隱藏捲軸但保留滾動功能 */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* 復古純色硬陰影（無模糊漸層） */
+    .hard-shadow {
+      box-shadow: 4px 4px 0px #2B2825;
+    }
+    .hard-shadow-sm {
+      box-shadow: 3px 3px 0px #2B2825;
+    }
+    .hard-shadow-crimson {
+      box-shadow: 4px 4px 0px #C83E31;
+    }
+    .hard-shadow-amber {
+      box-shadow: 4px 4px 0px #D99B26;
+    }
+  </style>
+</head>
+<body class="pb-24 selection:bg-crimson selection:text-card">
+
+  <!-- 頂部裝飾純色橫條 -->
+  <div class="w-full h-2 bg-crimson"></div>
+
+  <!-- ==================== HERO 主視覺與九份山城原創向量插畫 ==================== -->
+  <header class="bg-charcoal text-card relative overflow-hidden border-b-4 border-amber">
+    <div class="max-w-xl mx-auto px-5 pt-6 pb-8">
+      
+      <!-- 頂部懸掛紅燈籠串 SVG 插畫 -->
+      <div class="w-full flex justify-between items-start mb-4 select-none" aria-hidden="true">
+        <!-- 左側燈籠串 -->
+        <svg class="w-28 h-24 lantern-sway" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 5 Q60 25 120 2" stroke="#D99B26" stroke-width="2" fill="none"/>
+          <!-- 第一顆燈籠：九 -->
+          <line x1="32" y1="12" x2="32" y2="24" stroke="#D99B26" stroke-width="2"/>
+          <rect x="22" y="22" width="20" height="5" rx="1" fill="#D99B26"/>
+          <rect x="14" y="27" width="36" height="42" rx="16" fill="#C83E31" stroke="#D99B26" stroke-width="2"/>
+          <line x1="23" y1="28" x2="23" y2="68" stroke="#A32C21" stroke-width="1.5"/>
+          <line x1="41" y1="28" x2="41" y2="68" stroke="#A32C21" stroke-width="1.5"/>
+          <rect x="22" y="69" width="20" height="5" rx="1" fill="#D99B26"/>
+          <line x1="30" y1="74" x2="30" y2="86" stroke="#C83E31" stroke-width="2"/>
+          <line x1="34" y1="74" x2="34" y2="88" stroke="#D99B26" stroke-width="2"/>
+          <text x="32" y="54" text-anchor="middle" fill="#FAF7F2" font-size="16" font-weight="900">九</text>
+          <!-- 第二顆燈籠：份 -->
+          <line x1="85" y1="12" x2="85" y2="28" stroke="#D99B26" stroke-width="2"/>
+          <rect x="76" y="26" width="18" height="4" rx="1" fill="#D99B26"/>
+          <rect x="69" y="30" width="32" height="36" rx="14" fill="#C83E31" stroke="#D99B26" stroke-width="2"/>
+          <rect x="76" y="66" width="18" height="4" rx="1" fill="#D99B26"/>
+          <line x1="85" y1="70" x2="85" y2="82" stroke="#D99B26" stroke-width="2"/>
+          <text x="85" y="53" text-anchor="middle" fill="#FAF7F2" font-size="14" font-weight="900">份</text>
+        </svg>
+
+        <!-- 中間復古印章 -->
+        <div class="mt-2 px-3 py-1 border-2 border-amber bg-charcoal text-amber text-sm font-bold tracking-widest rounded">
+          山海奇幻行・令和八年秋
+        </div>
+
+        <!-- 右側燈籠串 -->
+        <svg class="w-28 h-24 lantern-sway-delay" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 2 Q60 25 120 5" stroke="#D99B26" stroke-width="2" fill="none"/>
+          <!-- 第三顆燈籠：基 -->
+          <line x1="35" y1="12" x2="35" y2="28" stroke="#D99B26" stroke-width="2"/>
+          <rect x="26" y="26" width="18" height="4" rx="1" fill="#D99B26"/>
+          <rect x="19" y="30" width="32" height="36" rx="14" fill="#C83E31" stroke="#D99B26" stroke-width="2"/>
+          <rect x="26" y="66" width="18" height="4" rx="1" fill="#D99B26"/>
+          <line x1="35" y1="70" x2="35" y2="82" stroke="#D99B26" stroke-width="2"/>
+          <text x="35" y="53" text-anchor="middle" fill="#FAF7F2" font-size="14" font-weight="900">基</text>
+          <!-- 第四顆燈籠：隆 -->
+          <line x1="88" y1="12" x2="88" y2="24" stroke="#D99B26" stroke-width="2"/>
+          <rect x="78" y="22" width="20" height="5" rx="1" fill="#D99B26"/>
+          <rect x="70" y="27" width="36" height="42" rx="16" fill="#C83E31" stroke="#D99B26" stroke-width="2"/>
+          <line x1="79" y1="28" x2="79" y2="68" stroke="#A32C21" stroke-width="1.5"/>
+          <line x1="97" y1="28" x2="97" y2="68" stroke="#A32C21" stroke-width="1.5"/>
+          <rect x="78" y="69" width="20" height="5" rx="1" fill="#D99B26"/>
+          <line x1="86" y1="74" x2="86" y2="86" stroke="#C83E31" stroke-width="2"/>
+          <line x1="90" y1="74" x2="90" y2="88" stroke="#D99B26" stroke-width="2"/>
+          <text x="88" y="54" text-anchor="middle" fill="#FAF7F2" font-size="16" font-weight="900">隆</text>
+        </svg>
+      </div>
+
+      <!-- 主標題與日期 -->
+      <div class="text-center space-y-3">
+        <p class="text-amber font-bold tracking-widest text-base">九份山城・基隆海港・台北慢旅</p>
+        <h1 class="text-3xl sm:text-4xl font-black tracking-wider text-card leading-tight">
+          山海奇幻行<br>
+          <span class="text-xl sm:text-2xl font-bold text-paper inline-block mt-1">兩天一夜專屬旅遊手冊</span>
+        </h1>
+        <div class="inline-flex items-center gap-2 bg-crimson text-card px-4 py-1.5 rounded-md border-2 border-amber font-bold text-base mt-2">
+          <span>📅 2026.11.21 (六) — 11.22 (日)</span>
+        </div>
+      </div>
+
+      <!-- 原創九份茶樓、山城階梯與基隆海港波浪向量插畫 (純色無漸層 SVG) -->
+      <div class="mt-6 rounded-xl border-2 border-amber bg-indigoNight p-3 overflow-hidden">
+        <svg class="w-full h-44 sm:h-52" viewBox="0 0 400 190" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="九份山城茶樓與基隆海港插畫">
+          <!-- 夜空圓月與雲紋 -->
+          <circle cx="75" cy="45" r="24" fill="#D99B26"/>
+          <rect x="35" y="42" width="45" height="6" rx="3" fill="#1E293B"/>
+          <rect x="85" y="55" width="50" height="6" rx="3" fill="#FAF7F2"/>
+          <rect x="290" y="32" width="60" height="6" rx="3" fill="#FAF7F2"/>
+
+          <!-- 遠山純色剪影 -->
+          <path d="M0 140 L70 85 L145 125 L240 60 L330 115 L400 80 L400 190 L0 190 Z" fill="#2B2825"/>
+          <path d="M120 150 L200 72 L295 140 L370 95 L400 120 L400 190 L120 190 Z" fill="#3A5A40"/>
+
+          <!-- 神隱少女風格：山城阿妹茶樓木造建築 (純色塊構成) -->
+          <!-- 屋頂三層飛簷 -->
+          <polygon points="155,70 245,70 232,56 168,56" fill="#2B2825" stroke="#D99B26" stroke-width="1.5"/>
+          <rect x="170" y="70" width="60" height="22" fill="#5C4033" stroke="#2B2825" stroke-width="1.5"/>
+          <!-- 湯屋發光暖窗 (頂層) -->
+          <rect x="177" y="75" width="11" height="12" fill="#D99B26"/>
+          <rect x="194" y="75" width="12" height="12" fill="#D99B26"/>
+          <rect x="211" y="75" width="11" height="12" fill="#D99B26"/>
+
+          <!-- 第二層屋簷與樓身 -->
+          <polygon points="142,102 258,102 244,90 156,90" fill="#2B2825" stroke="#D99B26" stroke-width="1.5"/>
+          <rect x="156" y="102" width="88" height="26" fill="#5C4033" stroke="#2B2825" stroke-width="1.5"/>
+          <!-- 湯屋發光暖窗 (中層) -->
+          <rect x="164" y="107" width="13" height="15" fill="#D99B26"/>
+          <rect x="182" y="107" width="15" height="15" fill="#D99B26"/>
+          <rect x="202" y="107" width="15" height="15" fill="#D99B26"/>
+          <rect x="222" y="107" width="13" height="15" fill="#D99B26"/>
+
+          <!-- 第一層底樓與豎崎路石階 -->
+          <polygon points="130,138 270,138 256,126 144,126" fill="#2B2825" stroke="#D99B26" stroke-width="1.5"/>
+          <rect x="146" y="138" width="108" height="28" fill="#5C4033" stroke="#2B2825" stroke-width="1.5"/>
+          <!-- 底層大門與紅牌匾 -->
+          <rect x="186" y="129" width="28" height="9" fill="#C83E31" stroke="#D99B26" stroke-width="1"/>
+          <rect x="188" y="143" width="24" height="23" fill="#D99B26"/>
+          <rect x="156" y="143" width="20" height="14" fill="#D99B26"/>
+          <rect x="224" y="143" width="20" height="14" fill="#D99B26"/>
+
+          <!-- 屋簷懸掛小紅燈籠串 -->
+          <circle cx="148" cy="107" r="4.5" fill="#C83E31"/>
+          <circle cx="252" cy="107" r="4.5" fill="#C83E31"/>
+          <circle cx="136" cy="143" r="5" fill="#C83E31"/>
+          <circle cx="148" cy="143" r="5" fill="#C83E31"/>
+          <circle cx="252" cy="143" r="5" fill="#C83E31"/>
+          <circle cx="264" cy="143" r="5" fill="#C83E31"/>
+
+          <!-- 左側山城石階 -->
+          <rect x="75" y="156" width="55" height="6" fill="#D6CBB9"/>
+          <rect x="85" y="149" width="45" height="6" fill="#FAF7F2"/>
+          <rect x="95" y="142" width="35" height="6" fill="#D6CBB9"/>
+          <rect x="105" y="135" width="25" height="6" fill="#FAF7F2"/>
+          <!-- 石階旁紅燈籠柱 -->
+          <line x1="82" y1="115" x2="82" y2="156" stroke="#D99B26" stroke-width="2.5"/>
+          <circle cx="89" cy="122" r="5.5" fill="#C83E31"/>
+          <circle cx="89" cy="135" r="5.5" fill="#C83E31"/>
+
+          <!-- 底部基隆海港波浪紋（純色日式海浪） -->
+          <rect x="0" y="164" width="400" height="26" fill="#1E293B"/>
+          <path d="M0 168 Q20 158 40 168 T80 168 T120 168 T160 168 T200 168 T240 168 T280 168 T320 168 T360 168 T400 168" stroke="#D99B26" stroke-width="2.5" fill="none"/>
+          <path d="M0 179 Q20 169 40 179 T80 179 T120 179 T160 179 T200 179 T240 179 T280 179 T320 179 T360 179 T400 179" stroke="#FAF7F2" stroke-width="2" fill="none"/>
+        </svg>
+      </div>
+
+      <!-- 同行夥伴區塊（復古木牌／紅燈籠名牌設計，共9人） -->
+      <div class="mt-6 bg-card text-charcoal rounded-xl p-4 border-2 border-amber">
+        <div class="flex items-center justify-between border-b-2 border-borderWarm pb-2 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-3 h-3 rounded-full bg-crimson"></span>
+            <h2 class="font-black text-lg tracking-wide">同行旅伴名錄</h2>
+          </div>
+          <span class="stamp-badge text-xs px-2 py-0.5 rounded">全員 9 名</span>
+        </div>
+        <div class="grid grid-cols-3 gap-2.5">
+          <!-- 9位夥伴木牌 -->
+          <div class="bg-paper border-2 border-charcoal rounded-lg py-2 px-2 text-center font-bold text-base flex items-center justify-center gap-1.5 hard-shadow-sm">
+            <span class="text-crimson text-sm">🏮</span><span>爸爸</span>
+          </div>
+          <div class="bg-paper border-2 border-charcoal rounded-lg py-2 px-2 text-center font-bold text-base flex items-center justify-center gap-1.5 hard-shadow-sm">
+            <span class="text-crimson text-sm">🏮</span><span>媽媽</span>
+          </div>
+          <div class="bg-paper border-2 border-charcoal rounded-lg py-2 px-2 text-center font-bold text-base flex items-center justify-center gap-1.5 hard-shadow-sm">
+            <span class="text-crimson text-sm">🏮</span><span>蛤</span>
+          </div>
+          <div class="bg-paper border-2 border-charcoal rounded-lg py-2 px-2 text-center font-bold text-base flex items-center justify-center gap-1.5 hard-shadow-sm">
+            <span class="text-crimson text-sm">🏮</span><span>阿琨</span>
+          </div>
+          <div class="bg-paper border-2 border-charcoal rounded-lg py-2 px-2 text-center font-bold text-base flex items-center justify-center gap-1.5 hard-shadow-sm">
+            <span class="text-crimson text-sm">🏮</span><span>貞</span>
+          </div>
+          <div class="bg-paper border-2 border-charcoal rounded-lg py-2 px-2 text-center font-bold text-base flex items-center justify-center gap-1.5 hard-shadow-sm">
+            <span class="text-crimson text-sm">🏮</span><span>尚璞</span>
+          </div>
+          <div class="bg-paper border-2 border-charcoal rounded-lg py-2 px-2 text-center font-bold text-base flex items-center justify-center gap-1.5 hard-shadow-sm">
+            <span class="text-crimson text-sm">🏮</span><span>阿歆</span>
+          </div>
+          <div class="bg-paper border-2 border-charcoal rounded-lg py-2 px-2 text-center font-bold text-base flex items-center justify-center gap-1.5 hard-shadow-sm">
+            <span class="text-crimson text-sm">🏮</span><span>麥克</span>
+          </div>
+          <div class="bg-paper border-2 border-charcoal rounded-lg py-2 px-2 text-center font-bold text-base flex items-center justify-center gap-1.5 hard-shadow-sm">
+            <span class="text-crimson text-sm">🏮</span><span>一文</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==================== 主要內容容器 ==================== -->
+  <main class="max-w-xl mx-auto px-4 pt-6 space-y-10">
+
+    <!-- ==================== 區塊一：每日行程總覽 ==================== -->
+    <section id="section-itinerary" class="scroll-mt-6">
+      <!-- 區塊標題 -->
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-lg bg-crimson text-card flex items-center justify-center font-black text-lg border-2 border-charcoal">
+            壹
+          </div>
+          <div>
+            <h2 class="text-2xl font-black tracking-wide text-charcoal">每日行程指南</h2>
+            <p class="text-sm text-wood font-medium">點擊公車與台鐵按鈕可開啟側邊詳細面板</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 1 / Day 2 切換大按鈕 (方便大拇指點擊) -->
+      <div class="grid grid-cols-2 gap-3 mb-6">
+        <button
+          id="tab-btn-day1"
+          onclick="switchDayTab(1)"
+          class="py-3.5 px-4 rounded-xl font-black text-base border-2 border-charcoal bg-crimson text-card hard-shadow transition-transform active:translate-y-0.5 flex flex-col items-center justify-center"
+        >
+          <span>第一天・11/21 (六)</span>
+          <span class="text-xs font-medium mt-0.5 opacity-95">九份山城 ➔ 基隆夜市</span>
+        </button>
+        <button
+          id="tab-btn-day2"
+          onclick="switchDayTab(2)"
+          class="py-3.5 px-4 rounded-xl font-black text-base border-2 border-charcoal bg-card text-charcoal hard-shadow transition-transform active:translate-y-0.5 flex flex-col items-center justify-center"
+        >
+          <span>第二天・11/22 (日)</span>
+          <span class="text-xs font-medium mt-0.5 text-wood">海景早餐 ➔ 台北漫步</span>
+        </button>
+      </div>
+
+      <!-- ==================== DAY 1 行程內容 ==================== -->
+      <div id="day1-content" class="space-y-5">
+        <!-- 行程時間軸提示條 (已移除「九份後不限時間」標籤) -->
+        <div class="bg-charcoal text-card px-4 py-3 rounded-xl border-2 border-amber flex items-center">
+          <span class="font-bold text-base">🏮 第一天：山城紅燈籠與海港夜市</span>
+        </div>
+
+        <!-- 步驟 1: 10:00 台北車站會合 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="bg-charcoal text-amber font-black px-3 py-1 rounded-md text-base tracking-wider">10:00</span>
+            <h3 class="text-xl font-black text-charcoal">台北車站會合</h3>
+          </div>
+          <p class="text-base text-charcoal">
+            於台北車站台鐵剪票口集合，確認悠遊卡／一卡通餘額充足，準備搭乘火車前往瑞芳。
+          </p>
+        </article>
+
+        <!-- 步驟 2: 10:30 火車 台北 => 瑞芳 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="bg-charcoal text-amber font-black px-3 py-1 rounded-md text-base tracking-wider">10:30</span>
+            <h3 class="text-xl font-black text-charcoal">火車：台北 ➔ 瑞芳</h3>
+          </div>
+          <p class="text-base text-charcoal">
+            搭乘台鐵列車由台北車站出發前往瑞芳車站（車程約 40 分鐘）。
+          </p>
+        </article>
+
+        <!-- 步驟 3: 11:10 瑞芳車站會合＆寄放行李 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="bg-charcoal text-amber font-black px-3 py-1 rounded-md text-base tracking-wider">11:10</span>
+            <h3 class="text-xl font-black text-charcoal">瑞芳車站 — 會合＆寄放行李</h3>
+          </div>
+          <p class="text-base text-charcoal mb-3">
+            抵達瑞芳車站後，跟 <strong class="text-crimson font-black underline decoration-2">蛤、阿琨</strong> 會合，並先將大型行李寄放於瑞芳車站，輕裝上九份！
+          </p>
+          <!-- 20:00前領行李醒目警示框 -->
+          <div class="bg-paper rounded-lg p-3.5 crimson-double-border">
+            <div class="flex items-start gap-2.5">
+              <span class="text-xl leading-none mt-0.5">⚠️</span>
+              <div class="text-base">
+                <p class="font-black text-crimson">重要提醒：行李房 20:00 前務必領取！</p>
+                <p class="text-charcoal mt-1 text-base">
+                  如果是寄放在瑞芳車站的「<strong>台鐵行李房</strong>」，營業時間只到 <strong class="text-crimson font-black">20:00</strong>，下山後務必於 <strong class="text-crimson font-black">20:00 前</strong>領取！（若使用站內外投幣／電子置物櫃則依櫃位規定）。
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 步驟 4: 搭公車到九份 (開始不標時間) -->
+        <!-- 步驟 4: 搭公車到九份 (已移除「隨興出發・不限時間」標籤) -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <h3 class="text-xl font-black text-charcoal">搭公車到九份</h3>
+          </div>
+
+          <div class="space-y-3 text-base text-charcoal">
+            <div class="bg-paper p-3.5 rounded-lg border border-borderWarm">
+              <p class="font-bold text-charcoal">🚌 車程與票價：</p>
+              <p class="mt-0.5">車程約 <strong>15～20 分鐘</strong>（假日塞車時可能需 30 分鐘以上），刷悠遊卡或一卡通票價約 <strong>15～25 元</strong>。</p>
+            </div>
+
+            <div class="bg-paper p-3.5 rounded-lg border-2 border-amber">
+              <p class="font-black text-crimson flex items-center gap-1.5">
+                <span>📍 上車地點（重要！）：</span>
+              </p>
+              <p class="mt-1">
+                公車站牌<strong>不在</strong>火車站正門口。出瑞芳前站後，請<strong>左轉</strong>沿著「<strong>明燈路三段</strong>」步行約 3～5 分鐘（約 200 公尺），在瑞芳警局旁的「<strong class="text-crimson">區民廣場</strong>」公車候車亭排隊上車。
+              </p>
+            </div>
+
+            <div class="bg-paper p-3.5 rounded-lg border border-borderWarm">
+              <p class="font-bold text-charcoal">🚏 下車地點：</p>
+              <p class="mt-0.5">於「<strong>九份老街</strong>」站下車即達九份老街入口（<strong>7-11 門市旁</strong>）。</p>
+            </div>
+          </div>
+
+          <!-- 開啟公車路線側邊面板按鈕 -->
+          <button
+            onclick="openDrawer('bus-drawer')"
+            class="mt-4 w-full py-3.5 px-4 bg-crimson hover:bg-crimsonDark text-card font-black text-base rounded-xl border-2 border-charcoal hard-shadow flex items-center justify-between transition-transform active:translate-y-0.5"
+          >
+            <span class="flex items-center gap-2">
+              <span>🚌</span>
+              <span>點選開啟側邊面板：查看 6 條公車路線＆即時動態</span>
+            </span>
+            <span class="text-lg">➔</span>
+          </button>
+        </article>
+
+        <!-- 步驟 5: 九份吃中餐＆漫遊 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="bg-amber text-charcoal font-black px-3 py-1 rounded-md text-sm">自由漫遊</span>
+            <h3 class="text-xl font-black text-charcoal">九份吃中餐・山城老街漫步</h3>
+          </div>
+          <p class="text-base text-charcoal mb-3">
+            不趕時間！沿著基山街品嚐芋圓、草仔粿、紅糟肉圓、魚丸伯仔等山城美食，並走訪豎崎路階梯與阿妹茶樓拍照留念。
+          </p>
+          <a
+            href="#section-food"
+            onclick="switchFoodTab('jiufen')"
+            class="inline-flex items-center gap-1.5 text-crimson font-black text-base underline decoration-2"
+          >
+            <span>🍡 點此跳轉查看「AI 推薦美食清單（九份篇）」</span>
+          </a>
+        </article>
+
+        <!-- 步驟 6: 下山搭公車 九份老街 => 瑞芳火車站 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span class="bg-bamboo text-card font-bold px-3 py-1 rounded-md text-sm">下山返程</span>
+            <h3 class="text-xl font-black text-charcoal">下山搭公車：九份老街 ➔ 瑞芳火車站</h3>
+          </div>
+          <div class="space-y-2.5 text-base text-charcoal bg-paper p-4 rounded-lg border border-borderWarm">
+            <p><strong>📍 上車地點：</strong>九份老街入口（7-11）斜對面上方的「<strong>九份老街</strong>」候車亭（往瑞芳方向）。</p>
+            <p><strong>🚏 下車地點：</strong>「<strong>瑞芳火車站（區民廣場）</strong>」站（下車後右轉步行約 3 分鐘即達火車站大廳）。</p>
+            <p><strong>⏱️ 車程與票價：</strong>約 15 分鐘，刷悠遊卡／一卡通約 15～25 元。</p>
+          </div>
+          <button
+            onclick="openDrawer('bus-drawer')"
+            class="mt-3 w-full py-3 px-4 bg-paper hover:bg-borderWarm text-charcoal font-black text-base rounded-xl border-2 border-charcoal hard-shadow-sm flex items-center justify-between"
+          >
+            <span>🚌 查看下山公車即時動態班次</span>
+            <span>➔</span>
+          </button>
+        </article>
+
+        <!-- 步驟 7: 到瑞芳火車站領行李 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="bg-crimson text-card font-bold px-3 py-1 rounded-md text-sm">領取行李</span>
+            <h3 class="text-xl font-black text-charcoal">到瑞芳火車站領行李</h3>
+          </div>
+          <p class="text-base text-charcoal">
+            回到瑞芳車站後，先領取寄放的行李（再次提醒：若寄放於台鐵行李房，務必於 <strong class="text-crimson font-black">20:00 前</strong>完成領取）。
+          </p>
+        </article>
+
+        <!-- 步驟 8: 坐火車到基隆火車站 (台鐵轉乘) -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span class="bg-indigoNight text-card font-bold px-3 py-1 rounded-md text-sm">台鐵兩段式轉乘</span>
+            <h3 class="text-xl font-black text-charcoal">坐火車到基隆：瑞芳 ➔ 八堵 ➔ 基隆</h3>
+          </div>
+          <p class="text-base text-charcoal mb-3">
+            拿完行李進站後，往<strong>北上（八堵／台北／樹林）</strong>方向月台搭車：
+          </p>
+          <div class="space-y-3 text-base">
+            <div class="bg-paper p-3.5 rounded-lg border-l-4 border-crimson">
+              <p class="font-black text-charcoal">1️⃣ 第一段（瑞芳 ➔ 八堵）：</p>
+              <ul class="list-disc list-inside mt-1 space-y-1 text-charcoal">
+                <li>搭乘任何一班北上「<strong>區間車</strong>」或「<strong>區間快車</strong>」（班次極多，約 10～20 分鐘就有一班）。</li>
+                <li>車程約 10 分鐘（中間僅停「四腳亭」一站，區間快車直達），於「<strong class="text-crimson">八堵站</strong>」下車。</li>
+              </ul>
+            </div>
+            <div class="bg-paper p-3.5 rounded-lg border-l-4 border-amber">
+              <p class="font-black text-charcoal">2️⃣ 第二段（八堵 ➔ 基隆）：</p>
+              <ul class="list-disc list-inside mt-1 space-y-1 text-charcoal">
+                <li>在八堵站依月台指示換車（通常在同月台對面或走地下道至基隆線月台），轉乘往「<strong class="text-crimson">基隆</strong>」的區間車（約 10～15 分鐘一班）。</li>
+                <li>車程約 6～8 分鐘（中間停「三坑」一站），抵達終點站「<strong>基隆火車站</strong>」。</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 開啟台鐵轉乘側邊面板與時刻表按鈕 -->
+          <button
+            onclick="openDrawer('train-drawer')"
+            class="mt-4 w-full py-3.5 px-4 bg-indigoNight text-card font-black text-base rounded-xl border-2 border-charcoal hard-shadow flex items-center justify-between transition-transform active:translate-y-0.5"
+          >
+            <span class="flex items-center gap-2">
+              <span>🚆</span>
+              <span>點選開啟側邊面板：轉乘圖解＆台鐵時刻表查詢</span>
+            </span>
+            <span class="text-lg">➔</span>
+          </button>
+        </article>
+
+        <!-- 步驟 9: 先到飯店辦入住 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="bg-amber text-charcoal font-black px-3 py-1 rounded-md text-sm">飯店入住</span>
+            <h3 class="text-xl font-black text-charcoal">先到飯店辦入住（華帥海景飯店）</h3>
+          </div>
+          <p class="text-base text-charcoal mb-3">
+            走出基隆火車站（南站出口）沿港邊步行約 5～7 分鐘即可抵達「<strong>華帥海景飯店</strong>」，先辦理 Check-in 放置行李、稍作休息。
+          </p>
+          <a
+            href="#section-hotel"
+            class="inline-flex items-center gap-1.5 text-crimson font-black text-base underline decoration-2"
+          >
+            <span>🏨 查看華帥海景飯店照片與 Google 地圖導航</span>
+          </a>
+        </article>
+
+        <!-- 步驟 10: 接著去逛基隆夜市 -> 集合散步回飯店 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="bg-crimson text-card font-bold px-3 py-1 rounded-md text-sm">海港夜生活</span>
+            <h3 class="text-xl font-black text-charcoal">逛基隆廟口夜市 ➔ 回飯店休息</h3>
+          </div>
+          <p class="text-base text-charcoal mb-3">
+            從飯店下樓步行約 5 分鐘即達基隆廟口夜市！自由品嚐營養三明治、螃蟹羹油飯、天一香滷肉飯、泡泡冰等美食。
+          </p>
+          <div class="bg-paper p-3.5 rounded-lg border-2 border-charcoal">
+            <p class="font-black text-charcoal flex items-center gap-2">
+              <span>🌙</span>
+              <span>逛完夜市結束後大家集合，一起散步回飯店休息！</span>
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- ==================== DAY 2 行程內容 (預設隱藏，點擊分頁切換) ==================== -->
+      <div id="day2-content" class="space-y-5 hidden">
+        <!-- 行程時間軸提示條 (已移除「全天不限時間」標籤) -->
+        <div class="bg-charcoal text-card px-4 py-3 rounded-xl border-2 border-amber flex items-center">
+          <span class="font-bold text-base">☀️ 第二天：海港晨光與台北文青漫遊</span>
+        </div>
+
+        <!-- Day 2 步驟 1: 吃飯店早餐＆退房 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span class="bg-amber text-charcoal font-black px-3 py-1 rounded-md text-sm">晨間時光</span>
+            <h3 class="text-xl font-black text-charcoal">吃飯店早餐＆辦理退房</h3>
+          </div>
+          <p class="text-base text-charcoal mb-3">
+            早晨睡到自然醒，於華帥海景飯店享用早餐，整理行李準備退房（請留意以下飯店時間規範）：
+          </p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="bg-paper p-3.5 rounded-lg border-2 border-bamboo">
+              <p class="text-sm font-bold text-bamboo">🍽️ 早餐供應時間</p>
+              <p class="text-xl font-black text-charcoal mt-0.5">07:00 ～ 10:00</p>
+            </div>
+            <div class="bg-paper p-3.5 rounded-lg border-2 border-crimson">
+              <p class="text-sm font-bold text-crimson">🔑 最晚退房時間</p>
+              <p class="text-xl font-black text-crimson mt-0.5">12:00 前</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Day 2 步驟 2: 坐火車回台北車站 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="bg-indigoNight text-card font-bold px-3 py-1 rounded-md text-sm">台鐵北返</span>
+            <h3 class="text-xl font-black text-charcoal">坐火車回台北車站</h3>
+          </div>
+          <p class="text-base text-charcoal">
+            退房後步行至基隆火車站，搭乘台鐵區間車直達「<strong>台北車站</strong>」（車程約 45 分鐘，不需換車）。抵達台北車站後，可先將行李寄放於站內置物櫃或台北車站行李房。
+          </p>
+        </article>
+
+        <!-- Day 2 步驟 3: 華山文創園區 或 中正紀念堂 (二選一互動切換 + 實景照片) -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="bg-crimson text-card font-bold px-3 py-1 rounded-md text-sm">行程二選一</span>
+            <h3 class="text-xl font-black text-charcoal">華山文創園區 或 中正紀念堂</h3>
+          </div>
+          <p class="text-base text-charcoal mb-3">
+            當天視大家的心情與天氣決定！點擊下方按鈕可切換查看兩個景點的實景照片、交通與亮點：
+          </p>
+
+          <!-- 方案切換按鈕 -->
+          <div class="grid grid-cols-2 gap-2.5 mb-4">
+            <button
+              id="spot-btn-huashan"
+              onclick="switchSpotTab('huashan')"
+              class="py-2.5 px-3 rounded-lg font-black text-base border-2 border-charcoal bg-amber text-charcoal hard-shadow-sm"
+            >
+              🎨 方案 A：華山文創
+            </button>
+            <button
+              id="spot-btn-cks"
+              onclick="switchSpotTab('cks')"
+              class="py-2.5 px-3 rounded-lg font-black text-base border-2 border-charcoal bg-paper text-charcoal"
+            >
+              🏛️ 方案 B：中正紀念堂
+            </button>
+          </div>
+
+          <!-- 方案 A 內容：華山 1914 文創園區 (含復古木框照片) -->
+          <div id="spot-content-huashan" class="bg-paper p-4 rounded-lg border-2 border-charcoal space-y-3">
+            <figure class="bg-card p-2 rounded-lg border-2 border-charcoal hard-shadow-sm">
+              <div class="relative h-48 sm:h-56 w-full overflow-hidden rounded bg-wood">
+                <img
+                  src="https://cozzi.cathayhotel.com.tw/files/thumbnails/files_images_zhongxiao_attractions_Banner_viewpoint_Haushan1314_2_1070x665_1070x665.webp"
+                  onerror="this.onerror=null;this.src='https://www.taipeimice.com/upload/news/thumb_dcd75d5a3e394f296d26927459ffd030.jpeg';"
+                  alt="華山 1914 文化創意產業園區紅磚倉庫與綠地實景"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                >
+                <span class="absolute bottom-2 left-2 bg-charcoal text-amber text-xs font-bold px-2.5 py-1 rounded border border-amber">
+                  🎨 華山 1914 文創園區
+                </span>
+              </div>
+              <figcaption class="text-xs font-bold text-wood mt-1.5 px-1">
+                百年酒廠古蹟紅磚建築與草地廣場，好逛又好拍。
+              </figcaption>
+            </figure>
+            <h4 class="text-lg font-black text-charcoal pt-1">🎨 華山 1914 文化創意產業園區</h4>
+            <p class="text-base text-charcoal"><strong>🚇 捷運交通：</strong>從台北車站搭乘板南線（藍線）2 站至「<strong>忠孝新生站</strong>」1 號出口，步行約 3～5 分鐘即達。</p>
+            <p class="text-base text-charcoal"><strong>✨ 漫遊亮點：</strong>日式古蹟酒廠紅磚倉庫、期間限定展覽、特色文創選物店、咖啡館與大片戶外綠地。</p>
+          </div>
+
+          <!-- 方案 B 內容：中正紀念堂 (含復古木框照片) -->
+          <div id="spot-content-cks" class="bg-paper p-4 rounded-lg border-2 border-charcoal space-y-3 hidden">
+            <figure class="bg-card p-2 rounded-lg border-2 border-charcoal hard-shadow-sm">
+              <div class="relative h-48 sm:h-56 w-full overflow-hidden rounded bg-indigoNight">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Chiang_Kai-shek_Memorial_Hall_20190803.jpg/1024px-Chiang_Kai-shek_Memorial_Hall_20190803.jpg"
+                  onerror="this.onerror=null;this.src='https://commons.wikimedia.org/wiki/Special:FilePath/Chiang_Kai-shek_memorial_amk.jpg?width=900';"
+                  alt="台北中正紀念堂藍白主建築與自由廣場實景"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                >
+                <span class="absolute bottom-2 left-2 bg-charcoal text-amber text-xs font-bold px-2.5 py-1 rounded border border-amber">
+                  🏛️ 中正紀念堂・自由廣場
+                </span>
+              </div>
+              <figcaption class="text-xs font-bold text-wood mt-1.5 px-1">
+                宏偉藍白琉璃瓦建築、自由廣場牌樓與兩廳院古典迴廊。
+              </figcaption>
+            </figure>
+            <h4 class="text-lg font-black text-charcoal pt-1">🏛️ 中正紀念堂・自由廣場</h4>
+            <p class="text-base text-charcoal"><strong>🚇 捷運交通：</strong>從台北車站搭乘淡水信義線（紅線）2 站至「<strong>中正紀念堂站</strong>」5 號出口出站即達。</p>
+            <p class="text-base text-charcoal"><strong>✨ 漫遊亮點：</strong>壯觀藍白琉璃瓦建築、自由廣場牌樓、國家兩廳院古典迴廊、庭園錦鯉池散步。</p>
+          </div>
+        </article>
+
+        <!-- Day 2 步驟 4: 吃完中飯 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="bg-bamboo text-card font-bold px-3 py-1 rounded-md text-sm">午餐聚餐</span>
+            <h3 class="text-xl font-black text-charcoal">享用台北午餐</h3>
+          </div>
+          <p class="text-base text-charcoal mb-2">
+            於華山周邊（忠孝新生商圈）或中正紀念堂周邊（金峰滷肉飯、南門市場、杭州小籠湯包）享用午餐。
+          </p>
+          <a
+            href="#section-food"
+            onclick="switchFoodTab('taipei')"
+            class="inline-flex items-center gap-1.5 text-crimson font-black text-base underline decoration-2"
+          >
+            <span>🍱 點此查看「AI 推薦美食清單（台北午餐篇）」</span>
+          </a>
+        </article>
+
+        <!-- Day 2 步驟 5: 搭車回程 -->
+        <article class="bg-card rounded-xl p-5 vintage-double-border relative">
+          <div class="flex flex-wrap items-center gap-2 mb-2">
+            <span class="bg-charcoal text-amber font-bold px-3 py-1 rounded-md text-sm">平安賦歸</span>
+            <h3 class="text-xl font-black text-charcoal">返回台北車站領行李・搭車回程</h3>
+          </div>
+          <p class="text-base text-charcoal">
+            用完午餐、逛完街後，返回台北車站領取行李，帶著滿滿的山海回憶搭車平安回家！
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================== 區塊二：住宿專區（華帥海景飯店） ==================== -->
+    <section id="section-hotel" class="scroll-mt-6">
+      <!-- 區塊標題 -->
+      <div class="flex items-center gap-2.5 mb-4">
+        <div class="w-9 h-9 rounded-lg bg-amber text-charcoal flex items-center justify-center font-black text-lg border-2 border-charcoal">
+          貳
+        </div>
+        <div>
+          <h2 class="text-2xl font-black tracking-wide text-charcoal">下榻旅宿・華帥海景飯店</h2>
+          <p class="text-sm text-wood font-medium">基隆港第一排・下樓走 5 分鐘到廟口夜市</p>
+        </div>
+      </div>
+
+      <div class="bg-card rounded-xl p-5 vintage-double-border space-y-5">
+        <!-- 飯店標題與時間規範徽章 -->
+        <div class="border-b-2 border-borderWarm pb-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <h3 class="text-2xl font-black text-charcoal">華帥海景飯店 <span class="text-base font-bold text-wood block sm:inline">Harbor View Hotel</span></h3>
+            <span class="stamp-badge text-xs px-2.5 py-1 rounded">基隆港景第一排</span>
+          </div>
+          <p class="text-base text-charcoal mt-2">
+            坐落於基隆港畔忠一路／孝二路口，正對海洋廣場與郵輪港灣。從基隆火車站步行約 5～7 分鐘可達，前往基隆廟口夜市也只需步行約 5 分鐘，地理位置極佳！
+          </p>
+
+          <!-- 早餐與退房醒目資訊卡 -->
+          <div class="grid grid-cols-2 gap-3 mt-4">
+            <div class="bg-paper border-2 border-charcoal rounded-lg p-3 text-center">
+              <span class="text-xs font-bold text-wood block">🍽️ 早餐供應時間</span>
+              <strong class="text-lg font-black text-charcoal">07:00 ～ 10:00</strong>
+            </div>
+            <div class="bg-paper border-2 border-crimson rounded-lg p-3 text-center">
+              <span class="text-xs font-bold text-crimson block">🔑 最晚退房時間</span>
+              <strong class="text-lg font-black text-crimson">12:00 前</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- 飯店房間實景照片輪播 (Carousel：已換上官方清晰圖檔並移除所有圖片文字描述) -->
+        <div>
+          <div class="flex items-center justify-between mb-2.5">
+            <h4 class="font-black text-base text-charcoal">📸 飯店客房實景寫真</h4>
+            <span id="hotel-slide-counter" class="stamp-badge text-xs px-2 py-0.5 rounded">1 / 3</span>
+          </div>
+
+          <div
+            id="hotel-carousel"
+            class="bg-paper p-2.5 rounded-xl border-2 border-charcoal hard-shadow-sm select-none"
+          >
+            <!-- 輪播視窗 -->
+            <div class="relative h-56 sm:h-64 w-full overflow-hidden rounded-lg bg-charcoal border border-borderWarm">
+              <!-- Slide 1 -->
+              <div class="hotel-slide w-full h-full" data-index="0">
+                <img
+                  src="https://harborview.hexa.tw/dqf1/prod/b5240a003c1fec63c8be566aa560b09e/1_565714407695319573.webp"
+                  alt="華帥海景飯店客房照片 1"
+                  class="w-full h-full object-cover"
+                >
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="hotel-slide w-full h-full hidden" data-index="1">
+                <img
+                  src="https://harborview.hexa.tw/dqf1/prod/3decff4598b01bf7a9b990ca4e156fe9/0_565811270012371724.webp"
+                  alt="華帥海景飯店客房照片 2"
+                  class="w-full h-full object-cover"
+                >
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="hotel-slide w-full h-full hidden" data-index="2">
+                <img
+                  src="https://harborview.hexa.tw/dqf1/prod/3e466f5102cc6d0ae2b3509532a1d789/0_565804214068970252.webp"
+                  alt="華帥海景飯店客房照片 3"
+                  class="w-full h-full object-cover"
+                >
+              </div>
+
+              <!-- 左切換按鈕 -->
+              <button
+                type="button"
+                onclick="changeHotelSlide(-1)"
+                aria-label="上一張客房照片"
+                class="absolute left-2.5 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-charcoal text-amber border-2 border-amber font-black text-lg flex items-center justify-center active:scale-95"
+              >
+                ❮
+              </button>
+
+              <!-- 右切換按鈕 -->
+              <button
+                type="button"
+                onclick="changeHotelSlide(1)"
+                aria-label="下一張客房照片"
+                class="absolute right-2.5 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-charcoal text-amber border-2 border-amber font-black text-lg flex items-center justify-center active:scale-95"
+              >
+                ❯
+              </button>
+            </div>
+
+            <!-- 圓點指示器 (不含文字描述) -->
+            <div class="mt-3 flex items-center justify-center gap-2">
+              <button
+                type="button"
+                onclick="goToHotelSlide(0)"
+                aria-label="切換至第 1 張照片"
+                class="hotel-dot w-6 h-3 rounded-full bg-crimson border border-charcoal transition-all"
+              ></button>
+              <button
+                type="button"
+                onclick="goToHotelSlide(1)"
+                aria-label="切換至第 2 張照片"
+                class="hotel-dot w-3 h-3 rounded-full bg-borderWarm border border-charcoal transition-all"
+              ></button>
+              <button
+                type="button"
+                onclick="goToHotelSlide(2)"
+                aria-label="切換至第 3 張照片"
+                class="hotel-dot w-3 h-3 rounded-full bg-borderWarm border border-charcoal transition-all"
+              ></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 飯店地址電話與導航按鈕 (已移除撥打電話按鈕) -->
+        <div class="bg-paper p-4 rounded-xl border-2 border-charcoal space-y-2 text-base">
+          <p><strong>📍 飯店地址：</strong>基隆市仁愛區孝二路 108 號</p>
+          <p><strong>📞 聯絡電話：</strong>(02) 2422-3131</p>
+          <p><strong>🚶 步行距離：</strong>距離基隆火車站（南站）約 450 公尺；距離基隆廟口夜市約 400 公尺。</p>
+        </div>
+
+        <div>
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=基隆華帥海景飯店"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full py-3.5 px-4 bg-crimson hover:bg-crimsonDark text-card font-black text-base rounded-xl border-2 border-charcoal hard-shadow flex items-center justify-center gap-2 transition-transform active:translate-y-0.5"
+          >
+            <span>🗺️ 一鍵開啟 Google Maps 導航至華帥海景飯店</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 區塊三：AI 推薦美食清單 ==================== -->
+    <section id="section-food" class="scroll-mt-6">
+      <!-- 區塊標題 -->
+      <div class="flex items-center gap-2.5 mb-4">
+        <div class="w-9 h-9 rounded-lg bg-bamboo text-card flex items-center justify-center font-black text-lg border-2 border-charcoal">
+          參
+        </div>
+        <div>
+          <h2 class="text-2xl font-black tracking-wide text-charcoal">AI 推薦美食清單</h2>
+          <p class="text-sm text-wood font-medium">九份山城・基隆廟口（附攤位號）・台北午餐</p>
+        </div>
+      </div>
+
+      <!-- 美食分類切換按鈕 -->
+      <div class="grid grid-cols-3 gap-2 mb-5">
+        <button
+          id="food-tab-jiufen"
+          onclick="switchFoodTab('jiufen')"
+          class="py-3 px-2 rounded-xl font-black text-base border-2 border-charcoal bg-crimson text-card hard-shadow-sm"
+        >
+          🏮 九份老街
+        </button>
+        <button
+          id="food-tab-keelung"
+          onclick="switchFoodTab('keelung')"
+          class="py-3 px-2 rounded-xl font-black text-base border-2 border-charcoal bg-card text-charcoal"
+        >
+          🦑 基隆夜市
+        </button>
+        <button
+          id="food-tab-taipei"
+          onclick="switchFoodTab('taipei')"
+          class="py-3 px-2 rounded-xl font-black text-base border-2 border-charcoal bg-card text-charcoal"
+        >
+          🍱 台北午餐
+        </button>
+      </div>
+
+      <!-- 九份老街美食清單 -->
+      <div id="food-list-jiufen" class="space-y-3.5">
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🥣 阿柑姨芋圓 ／ 賴阿婆芋圓</h3>
+            <span class="stamp-badge text-xs px-2 py-0.5 rounded shrink-0">九份必吃</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            手工現做 Q 彈芋圓與地瓜圓！阿柑姨位於豎崎路頂端（九份國小階梯旁），內用區可一邊吃冰／熱芋圓，一邊俯瞰深澳岬角山海美景。
+          </p>
+        </div>
+
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🌿 阿蘭草仔粿</h3>
+            <span class="stamp-badge text-xs px-2 py-0.5 rounded shrink-0">人氣排隊</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            外皮軟糯帶艾草清香，招牌「菜脯米」鹹香夠味、「甜紅豆」綿密不膩，還有芋粿巧也是必買散步點心。
+          </p>
+        </div>
+
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🥢 金枝紅糟肉圓</h3>
+            <span class="bg-amber text-charcoal font-bold text-xs px-2 py-0.5 rounded shrink-0">正餐推薦</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            晶瑩剔透的 Q 彈外皮包裹紅糟醃製的豬肉與筍丁，搭配一碗綜合丸湯，是九份吃中餐的好選擇。
+          </p>
+        </div>
+
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🍢 魚丸伯仔</h3>
+            <span class="bg-amber text-charcoal font-bold text-xs px-2 py-0.5 rounded shrink-0">古早味正餐</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            必點「古早味套餐」：豆干包（油豆腐鑲肉燥）＋乾冬粉＋魚丸湯，簡單卻超道地。
+          </p>
+        </div>
+
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🍵 阿妹茶樓 ／ 海悅樓景觀茶坊</h3>
+            <span class="bg-indigoNight text-amber font-bold text-xs px-2 py-0.5 rounded shrink-0">神隱少女地標</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            豎崎路最具代表性的紅燈籠木造茶樓！走累了可以坐下來泡壺台灣高山茶、配茶點，欣賞山城雲霧與海景。
+          </p>
+        </div>
+      </div>
+
+      <!-- 基隆廟口夜市美食清單 (預設隱藏) -->
+      <div id="food-list-keelung" class="space-y-3.5 hidden">
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🥖 營養三明治</h3>
+            <span class="bg-crimson text-card font-bold text-xs px-2.5 py-0.5 rounded shrink-0">58 號攤</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            炸得金黃酥脆卻不油膩的橢圓麵包，夾入滷蛋、火腿、小黃瓜、番茄與靈魂甜香美乃滋（可多人分食）。
+          </p>
+        </div>
+
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🦀 吳記螃蟹羹・油飯</h3>
+            <span class="bg-crimson text-card font-bold text-xs px-2.5 py-0.5 rounded shrink-0">5 號攤</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            滿滿蟹腳肉、髮菜與金針菇的鮮甜羹湯，一定要配上一碗粒粒分明、麻油與香菇栗子香氣十足的油飯！
+          </p>
+        </div>
+
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🍚 天一香肉羹順（滷肉飯）</h3>
+            <span class="bg-crimson text-card font-bold text-xs px-2.5 py-0.5 rounded shrink-0">31 號攤</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            在地人激推的廟口最強滷肉飯！肥瘦適中、鹹甜入口即化，搭配清甜順口的肉羹湯與滷油豆腐。
+          </p>
+        </div>
+
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🍨 陳記 ／ 沈記泡泡冰</h3>
+            <span class="bg-crimson text-card font-bold text-xs px-2.5 py-0.5 rounded shrink-0">41、37 號攤</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            手打綿密細緻的古早味冰品！首推濃郁的「花生花豆（大紅豆）」或清爽酸甜的「百香果／情人果」口味。
+          </p>
+        </div>
+
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🌭 世盛一口吃香腸</h3>
+            <span class="bg-crimson text-card font-bold text-xs px-2.5 py-0.5 rounded shrink-0">43-1 號攤</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            夜市入口轉角超香炭烤小香腸，外皮微焦脆、咬下爆汁，配生蒜頭一口一個超唰嘴。
+          </p>
+        </div>
+
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <div class="flex justify-between items-start gap-2">
+            <h3 class="text-lg font-black text-charcoal">🎁 連珍糕餅店（芋泥球）</h3>
+            <span class="stamp-badge text-xs px-2 py-0.5 rounded shrink-0">愛二路伴手禮</span>
+          </div>
+          <p class="text-base text-charcoal mt-1">
+            距離夜市與華帥飯店走路僅 3 分鐘（愛二路 42 號），百年老店必買綿密「芋泥球」與「芋頭西米露」。
+          </p>
+        </div>
+      </div>
+
+      <!-- 台北午餐清單 (預設隱藏) -->
+      <div id="food-list-taipei" class="space-y-3.5 hidden">
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <span class="bg-amber text-charcoal font-bold text-xs px-2.5 py-0.5 rounded">若選擇方案 A：華山文創園區周邊</span>
+          <h3 class="text-lg font-black text-charcoal mt-2">🍽️ 忠孝新生／華山商圈聚餐推薦</h3>
+          <ul class="list-disc list-inside text-base text-charcoal mt-1.5 space-y-1.5">
+            <li><strong>華山町餐酒館：</strong>就在華山園區對面，適合 9 人大桌聚餐聊天的披薩、義大利麵與排餐。</li>
+            <li><strong>忠孝新生巷弄日式定食：</strong>捷運忠孝新生站 1 號與 2 號出口巷弄有多家質感日式定食與早午餐咖啡廳。</li>
+            <li><strong>合掌村（華山市場）：</strong>喜愛生魚片、握壽司與海鮮丼飯的高人氣名店。</li>
+          </ul>
+        </div>
+
+        <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm">
+          <span class="bg-bamboo text-card font-bold text-xs px-2.5 py-0.5 rounded">若選擇方案 B：中正紀念堂周邊</span>
+          <h3 class="text-lg font-black text-charcoal mt-2">🥟 中正紀念堂／南門市場周邊推薦</h3>
+          <ul class="list-disc list-inside text-base text-charcoal mt-1.5 space-y-1.5">
+            <li><strong>杭州小籠湯包（杭州南路）：</strong>位於中正紀念堂後方，皮薄多汁的小籠湯包、蟹黃湯包與各式北方點心，座位寬敞適合全家人聚餐！</li>
+            <li><strong>金峰滷肉飯：</strong>中正紀念堂站 2 號出口旁，台北必吃傳奇滷肉飯配苦瓜排骨湯。</li>
+            <li><strong>全新南門市場 2 樓美食街：</strong>冷氣舒適、選擇多元（合歡刀削麵、國賓炒飯等），適合大家各自點喜歡吃的餐點。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 區塊四：互動式行李清單 ==================== -->
+    <section id="section-packing" class="scroll-mt-6">
+      <!-- 區塊標題 -->
+      <div class="flex items-center justify-between mb-4">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-lg bg-indigoNight text-amber flex items-center justify-center font-black text-lg border-2 border-charcoal">
+            肆
+          </div>
+          <div>
+            <h2 class="text-2xl font-black tracking-wide text-charcoal">出發前行李檢查表</h2>
+            <p class="text-sm text-wood font-medium">點擊項目即可打勾・進度自動儲存於手機</p>
+          </div>
+        </div>
+        <button
+          onclick="resetPackingList()"
+          class="text-xs font-bold text-crimson border border-crimson bg-card px-2.5 py-1.5 rounded-lg active:bg-crimson active:text-card"
+        >
+          重置勾選
+        </button>
+      </div>
+
+      <!-- 進度統計條 -->
+      <div class="bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm mb-5">
+        <div class="flex justify-between items-center mb-2">
+          <span class="font-black text-base text-charcoal">🎒 行李準備完成度</span>
+          <span id="packing-progress-text" class="font-black text-base text-crimson">0 / 10 項 (0%)</span>
+        </div>
+        <div class="w-full h-4 bg-paper rounded-full border-2 border-charcoal overflow-hidden">
+          <div id="packing-progress-bar" class="h-full bg-bamboo transition-all duration-300" style="width: 0%"></div>
+        </div>
+      </div>
+
+      <!-- 行李清單項目容器 -->
+      <div class="space-y-5" id="packing-list-container">
+        <!-- 分類一：隨身必備與雨具 -->
+        <div class="bg-card rounded-xl p-4 vintage-double-border">
+          <h3 class="text-lg font-black text-crimson border-b-2 border-borderWarm pb-2 mb-3 flex items-center gap-2">
+            <span>☔</span>
+            <span>一、隨身必備與雨具（山城海港重點！）</span>
+          </h3>
+          <div class="space-y-2.5">
+            <label class="packing-item flex items-start gap-3 p-3 rounded-lg bg-paper border-2 border-charcoal cursor-pointer select-none transition-colors">
+              <input type="checkbox" data-pack-id="item-1" class="mt-1.5 w-5 h-5 accent-crimson shrink-0">
+              <span class="text-base font-medium text-charcoal">
+                <strong>悠遊卡／一卡通</strong>（重要！搭台鐵區間車與九份公車必備，建議先儲值 200 元以上免找零）
+              </span>
+            </label>
+
+            <label class="packing-item flex items-start gap-3 p-3 rounded-lg bg-paper border-2 border-charcoal cursor-pointer select-none transition-colors">
+              <input type="checkbox" data-pack-id="item-2" class="mt-1.5 w-5 h-5 accent-crimson shrink-0">
+              <span class="text-base font-medium text-charcoal">
+                <strong>摺疊雨傘／輕便雨衣</strong>（11 月的九份與基隆極易飄雨，山風大時雨衣也很實用）
+              </span>
+            </label>
+
+            <label class="packing-item flex items-start gap-3 p-3 rounded-lg bg-paper border-2 border-charcoal cursor-pointer select-none transition-colors">
+              <input type="checkbox" data-pack-id="item-3" class="mt-1.5 w-5 h-5 accent-crimson shrink-0">
+              <span class="text-base font-medium text-charcoal">
+                <strong>防潑水好走的布鞋</strong>（九份階梯多且雨天易濕滑，避免穿硬底鞋）
+              </span>
+            </label>
+
+            <label class="packing-item flex items-start gap-3 p-3 rounded-lg bg-paper border-2 border-charcoal cursor-pointer select-none transition-colors">
+              <input type="checkbox" data-pack-id="item-4" class="mt-1.5 w-5 h-5 accent-crimson shrink-0">
+              <span class="text-base font-medium text-charcoal">
+                <strong>身分證、健保卡、現金與信用卡</strong>（老街與夜市多數攤販以現金為主）
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 分類二：衣物與保暖 -->
+        <div class="bg-card rounded-xl p-4 vintage-double-border">
+          <h3 class="text-lg font-black text-charcoal border-b-2 border-borderWarm pb-2 mb-3 flex items-center gap-2">
+            <span>🧥</span>
+            <span>二、衣物與保暖（11月下旬東北季風）</span>
+          </h3>
+          <div class="space-y-2.5">
+            <label class="packing-item flex items-start gap-3 p-3 rounded-lg bg-paper border-2 border-charcoal cursor-pointer select-none transition-colors">
+              <input type="checkbox" data-pack-id="item-5" class="mt-1.5 w-5 h-5 accent-crimson shrink-0">
+              <span class="text-base font-medium text-charcoal">
+                <strong>第二天換洗衣物、貼身衣物、睡衣</strong>
+              </span>
+            </label>
+
+            <label class="packing-item flex items-start gap-3 p-3 rounded-lg bg-paper border-2 border-charcoal cursor-pointer select-none transition-colors">
+              <input type="checkbox" data-pack-id="item-6" class="mt-1.5 w-5 h-5 accent-crimson shrink-0">
+              <span class="text-base font-medium text-charcoal">
+                <strong>防風保暖外套</strong>（九份山區入夜與基隆海邊風大偏涼，建議洋蔥式穿法）
+              </span>
+            </label>
+
+            <label class="packing-item flex items-start gap-3 p-3 rounded-lg bg-paper border-2 border-charcoal cursor-pointer select-none transition-colors">
+              <input type="checkbox" data-pack-id="item-7" class="mt-1.5 w-5 h-5 accent-crimson shrink-0">
+              <span class="text-base font-medium text-charcoal">
+                <strong>備用襪子 1～2 雙</strong>（預防遇到下雨鞋子微濕可隨時替換）
+              </span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 分類三：3C 與個人藥品 -->
+        <div class="bg-card rounded-xl p-4 vintage-double-border">
+          <h3 class="text-lg font-black text-charcoal border-b-2 border-borderWarm pb-2 mb-3 flex items-center gap-2">
+            <span>💊</span>
+            <span>三、3C 充電與個人藥品</span>
+          </h3>
+          <div class="space-y-2.5">
+            <label class="packing-item flex items-start gap-3 p-3 rounded-lg bg-paper border-2 border-charcoal cursor-pointer select-none transition-colors">
+              <input type="checkbox" data-pack-id="item-8" class="mt-1.5 w-5 h-5 accent-crimson shrink-0">
+              <span class="text-base font-medium text-charcoal">
+                <strong>手機、行動電源、充電線與充電頭</strong>（拍照與查公車動態必備）
+              </span>
+            </label>
+
+            <label class="packing-item flex items-start gap-3 p-3 rounded-lg bg-paper border-2 border-charcoal cursor-pointer select-none transition-colors">
+              <input type="checkbox" data-pack-id="item-9" class="mt-1.5 w-5 h-5 accent-crimson shrink-0">
+              <span class="text-base font-medium text-charcoal">
+                <strong>個人常備藥品</strong>（<strong class="text-crimson">暈車藥</strong>——九份山路蜿蜒必備、腸胃藥、OK 繃）
+              </span>
+            </label>
+
+            <label class="packing-item flex items-start gap-3 p-3 rounded-lg bg-paper border-2 border-charcoal cursor-pointer select-none transition-colors">
+              <input type="checkbox" data-pack-id="item-10" class="mt-1.5 w-5 h-5 accent-crimson shrink-0">
+              <span class="text-base font-medium text-charcoal">
+                <strong>個人洗漱保養品、牙刷牙膏、衛生紙、濕紙巾、環保袋</strong>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== 頁尾 Footer (已移除多餘日期與旅伴文字) ==================== -->
+  <footer class="mt-12 bg-charcoal text-card border-t-4 border-amber py-6 px-4 text-center">
+    <div class="max-w-xl mx-auto">
+      <p class="text-amber font-black tracking-widest text-base">🏮 山海奇幻行｜九份・基隆・台北 🏮</p>
+    </div>
+  </footer>
+
+  <!-- ==================== 固定式手機底部快速導覽列 ==================== -->
+  <nav class="fixed bottom-0 left-0 right-0 z-30 bg-charcoal border-t-2 border-amber text-card shadow-lg">
+    <div class="max-w-xl mx-auto grid grid-cols-5 text-center">
+      <a href="#section-itinerary" onclick="switchDayTab(1)" class="py-2.5 px-1 flex flex-col items-center justify-center active:bg-crimson transition-colors">
+        <span class="text-lg leading-none">🏮</span>
+        <span class="text-xs font-bold mt-1">Day 1 行程</span>
+      </a>
+      <a href="#section-itinerary" onclick="switchDayTab(2)" class="py-2.5 px-1 flex flex-col items-center justify-center active:bg-crimson transition-colors">
+        <span class="text-lg leading-none">☀️</span>
+        <span class="text-xs font-bold mt-1">Day 2 行程</span>
+      </a>
+      <button onclick="openDrawer('bus-drawer')" class="py-2.5 px-1 flex flex-col items-center justify-center bg-crimson text-card font-black border-x border-amber">
+        <span class="text-lg leading-none">🚌</span>
+        <span class="text-xs font-black mt-1">公車動態</span>
+      </button>
+      <a href="#section-hotel" class="py-2.5 px-1 flex flex-col items-center justify-center active:bg-crimson transition-colors">
+        <span class="text-lg leading-none">🏨</span>
+        <span class="text-xs font-bold mt-1">華帥飯店</span>
+      </a>
+      <a href="#section-packing" class="py-2.5 px-1 flex flex-col items-center justify-center active:bg-crimson transition-colors">
+        <span class="text-lg leading-none">🎒</span>
+        <span class="text-xs font-bold mt-1">行李清單</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ==================== 側邊面板遮罩 (Backdrop) ==================== -->
+  <div
+    id="drawer-backdrop"
+    onclick="closeAllDrawers()"
+    class="fixed inset-0 bg-charcoal bg-opacity-75 z-40 hidden transition-opacity"
+    aria-hidden="true"
+  ></div>
+
+  <!-- ==================== 側邊面板 1：九份公車路線與即時動態 ==================== -->
+  <aside
+    id="bus-drawer"
+    class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-paper z-50 transform translate-x-full transition-transform duration-300 ease-in-out border-l-4 border-crimson flex flex-col"
+    aria-labelledby="bus-drawer-title"
+  >
+    <!-- 面板標題列 -->
+    <div class="bg-charcoal text-card px-5 py-4 border-b-2 border-amber flex items-center justify-between shrink-0">
+      <div class="flex items-center gap-2">
+        <span class="text-xl">🚌</span>
+        <h3 id="bus-drawer-title" class="text-lg font-black tracking-wide">瑞芳 ⇄ 九份 公車路線與動態</h3>
+      </div>
+      <button
+        onclick="closeAllDrawers()"
+        class="px-3 py-1 bg-crimson text-card font-black text-sm rounded border border-amber"
+      >
+        關閉 ✕
+      </button>
+    </div>
+
+    <!-- 面板可滾動內容 -->
+    <div class="p-5 overflow-y-auto space-y-4 flex-1 text-base">
+      <!-- 乘車重點摘要 -->
+      <div class="bg-card p-4 rounded-xl border-2 border-charcoal space-y-2">
+        <p class="font-black text-crimson">📍 上山候車處（瑞芳 ➔ 九份）：</p>
+        <p class="text-charcoal">出瑞芳前站後<strong>左轉</strong>沿「明燈路三段」步行約 3～5 分鐘（200 公尺），於瑞芳警局旁「<strong>區民廣場</strong>」公車亭上車，於「<strong>九份老街</strong>」站（7-11 旁）下車。</p>
+        <hr class="border-borderWarm my-2">
+        <p class="font-black text-bamboo">📍 下山候車處（九份 ➔ 瑞芳）：</p>
+        <p class="text-charcoal">於九份老街入口（7-11）斜對面上方的「<strong>九份老街</strong>」候車亭上車，於「<strong>瑞芳火車站（區民廣場）</strong>」下車。</p>
+      </div>
+
+      <p class="font-black text-charcoal text-base">
+        👇 點擊以下路線按鈕，直接開啟「官方公車即時動態」查看公車還有幾分鐘進站（往金瓜石／九份方向皆可搭）：
+      </p>
+
+      <!-- 6 條公車路線大按鈕 -->
+      <div class="space-y-3">
+        <!-- 788 -->
+        <a
+          href="https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0400078800"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm active:translate-y-0.5 transition-transform"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="bg-crimson text-card font-black px-2.5 py-0.5 rounded text-base">788</span>
+              <span class="font-black text-lg text-charcoal ml-2">基隆 － 金瓜石</span>
+            </div>
+            <span class="text-crimson font-black text-sm">即時動態 ➔</span>
+          </div>
+          <p class="text-sm text-wood mt-1.5">班次密集主力路線，經瑞芳火車站直達九份老街。</p>
+        </a>
+
+        <!-- 965 -->
+        <a
+          href="https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0400096500"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm active:translate-y-0.5 transition-transform"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="bg-crimson text-card font-black px-2.5 py-0.5 rounded text-base">965</span>
+              <span class="font-black text-lg text-charcoal ml-2">台灣好行 九份金瓜石線</span>
+            </div>
+            <span class="text-crimson font-black text-sm">即時動態 ➔</span>
+          </div>
+          <p class="text-sm text-wood mt-1.5">板橋／西門／北門 － 瑞芳 － 九份 － 金瓜石，車況舒適。</p>
+        </a>
+
+        <!-- 1062 -->
+        <a
+          href="https://www.taiwanbus.tw/eBUSPage/Query/QueryResult.aspx?rno=10620"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm active:translate-y-0.5 transition-transform"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="bg-amber text-charcoal font-black px-2.5 py-0.5 rounded text-base">1062</span>
+              <span class="font-black text-lg text-charcoal ml-2">台北 － 金瓜石（基隆客運）</span>
+            </div>
+            <span class="text-crimson font-black text-sm">公路客運動態 ➔</span>
+          </div>
+          <p class="text-sm text-wood mt-1.5">台北忠孝復興 － 瑞芳 － 九份 － 金瓜石（連結至公路客運系統）。</p>
+        </a>
+
+        <!-- 827 -->
+        <a
+          href="https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0400082700"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm active:translate-y-0.5 transition-transform"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="bg-bamboo text-card font-black px-2.5 py-0.5 rounded text-base">827</span>
+              <span class="font-black text-lg text-charcoal ml-2">瑞芳 － 福山宮</span>
+            </div>
+            <span class="text-crimson font-black text-sm">即時動態 ➔</span>
+          </div>
+          <p class="text-sm text-wood mt-1.5">瑞芳在地路線，同樣停靠區民廣場與九份老街。</p>
+        </a>
+
+        <!-- 825 -->
+        <a
+          href="https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0400082500"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm active:translate-y-0.5 transition-transform"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="bg-bamboo text-card font-black px-2.5 py-0.5 rounded text-base">825</span>
+              <span class="font-black text-lg text-charcoal ml-2">瑞芳 － 金瓜石（僅假日行駛）</span>
+            </div>
+            <span class="text-crimson font-black text-sm">即時動態 ➔</span>
+          </div>
+          <p class="text-sm text-wood mt-1.5">11/21 為週六假日有行駛！專跑瑞芳至九份、金瓜石。</p>
+        </a>
+
+        <!-- 856 -->
+        <a
+          href="https://ebus.gov.taipei/EBus/VsSimpleMap?routeid=0400085600"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="block bg-card p-4 rounded-xl border-2 border-charcoal hard-shadow-sm active:translate-y-0.5 transition-transform"
+        >
+          <div class="flex items-center justify-between">
+            <div>
+              <span class="bg-bamboo text-card font-black px-2.5 py-0.5 rounded text-base">856</span>
+              <span class="font-black text-lg text-charcoal ml-2">台灣好行 黃金福隆線</span>
+            </div>
+            <span class="text-crimson font-black text-sm">即時動態 ➔</span>
+          </div>
+          <p class="text-sm text-wood mt-1.5">瑞芳火車站發車，行經九份老街、黃金博物館。</p>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== 側邊面板 2：台鐵兩段式轉乘詳情 ==================== -->
+  <aside
+    id="train-drawer"
+    class="fixed top-0 right-0 bottom-0 w-full max-w-md bg-paper z-50 transform translate-x-full transition-transform duration-300 ease-in-out border-l-4 border-amber flex flex-col"
+    aria-labelledby="train-drawer-title"
+  >
+    <!-- 面板標題列 -->
+    <div class="bg-indigoNight text-card px-5 py-4 border-b-2 border-amber flex items-center justify-between shrink-0">
+      <div class="flex items-center gap-2">
+        <span class="text-xl">🚆</span>
+        <h3 id="train-drawer-title" class="text-lg font-black tracking-wide">瑞芳 ➔ 基隆 台鐵轉乘指南</h3>
+      </div>
+      <button
+        onclick="closeAllDrawers()"
+        class="px-3 py-1 bg-crimson text-card font-black text-sm rounded border border-amber"
+      >
+        關閉 ✕
+      </button>
+    </div>
+
+    <!-- 面板內容 -->
+    <div class="p-5 overflow-y-auto space-y-4 flex-1 text-base">
+      <div class="bg-card p-4 rounded-xl crimson-double-border">
+        <p class="font-black text-crimson">⚠️ 進站前確認：已領回瑞芳站寄放的行李！</p>
+        <p class="text-charcoal text-sm mt-1">刷悠遊卡／一卡通進站後，請往<strong>北上（往八堵／台北／樹林方向）</strong>月台候車。</p>
+      </div>
+
+      <!-- 視覺化轉乘流程圖 -->
+      <div class="bg-card p-4 rounded-xl border-2 border-charcoal space-y-4">
+        <div class="flex items-start gap-3">
+          <div class="w-8 h-8 rounded-full bg-crimson text-card font-black flex items-center justify-center shrink-0 mt-0.5">1</div>
+          <div>
+            <h4 class="font-black text-lg text-charcoal">第一段：瑞芳站 ➔ 八堵站</h4>
+            <p class="text-charcoal mt-1">
+              搭乘任何一班北上「<strong>區間車</strong>」或「<strong>區間快車</strong>」（班次極多，約 10～20 分鐘就有一班）。
+            </p>
+            <p class="text-sm text-wood mt-1">
+              ⏱️ 車程約 10 分鐘（中間僅停「四腳亭」一站，區間快車直達），於「<strong class="text-crimson">八堵站</strong>」下車。
+            </p>
+          </div>
+        </div>
+
+        <div class="border-l-2 border-dashed border-charcoal ml-4 pl-6 py-1 text-sm font-bold text-bamboo">
+          🔄 於「八堵站」站內換月台（不出站，不需重複刷卡）
+        </div>
+
+        <div class="flex items-start gap-3">
+          <div class="w-8 h-8 rounded-full bg-amber text-charcoal font-black flex items-center justify-center shrink-0 mt-0.5">2</div>
+          <div>
+            <h4 class="font-black text-lg text-charcoal">第二段：八堵站 ➔ 基隆火車站</h4>
+            <p class="text-charcoal mt-1">
+              在八堵站依月台指示換車（通常在同月台對面或走地下道／電梯至基隆線月台），轉乘往終點站「<strong class="text-crimson">基隆</strong>」的區間車（約 10～15 分鐘一班）。
+            </p>
+            <p class="text-sm text-wood mt-1">
+              ⏱️ 車程約 6～8 分鐘（中間僅停「三坑」一站），抵達終點站「<strong>基隆火車站</strong>」。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 台鐵官方時刻表連結 -->
+      <a
+        href="https://tip.railway.gov.tw/tra-tip-web/tip/tip001/tip112/gobytime"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full py-3.5 px-4 bg-crimson text-card font-black text-base rounded-xl border-2 border-charcoal hard-shadow flex items-center justify-center gap-2"
+      >
+        <span>🕒 開啟台鐵官方列車時刻查詢</span>
+        <span>➔</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==================== JavaScript 互動邏輯 ==================== -->
+  <script>
+    // 1. 切換 Day 1 / Day 2 行程分頁
+    function switchDayTab(day) {
+      const day1Content = document.getElementById('day1-content');
+      const day2Content = document.getElementById('day2-content');
+      const btnDay1 = document.getElementById('tab-btn-day1');
+      const btnDay2 = document.getElementById('tab-btn-day2');
+
+      if (day === 1) {
+        day1Content.classList.remove('hidden');
+        day2Content.classList.add('hidden');
+
+        btnDay1.className = 'py-3.5 px-4 rounded-xl font-black text-base border-2 border-charcoal bg-crimson text-card hard-shadow transition-transform active:translate-y-0.5 flex flex-col items-center justify-center';
+        btnDay2.className = 'py-3.5 px-4 rounded-xl font-black text-base border-2 border-charcoal bg-card text-charcoal hard-shadow transition-transform active:translate-y-0.5 flex flex-col items-center justify-center';
+      } else {
+        day1Content.classList.add('hidden');
+        day2Content.classList.remove('hidden');
+
+        btnDay2.className = 'py-3.5 px-4 rounded-xl font-black text-base border-2 border-charcoal bg-crimson text-card hard-shadow transition-transform active:translate-y-0.5 flex flex-col items-center justify-center';
+        btnDay1.className = 'py-3.5 px-4 rounded-xl font-black text-base border-2 border-charcoal bg-card text-charcoal hard-shadow transition-transform active:translate-y-0.5 flex flex-col items-center justify-center';
+      }
+    }
+
+    // 2. 切換 Day 2 台北景點二選一（華山 vs 中正紀念堂）
+    function switchSpotTab(spot) {
+      const huashanContent = document.getElementById('spot-content-huashan');
+      const cksContent = document.getElementById('spot-content-cks');
+      const btnHuashan = document.getElementById('spot-btn-huashan');
+      const btnCks = document.getElementById('spot-btn-cks');
+
+      if (spot === 'huashan') {
+        huashanContent.classList.remove('hidden');
+        cksContent.classList.add('hidden');
+        btnHuashan.className = 'py-2.5 px-3 rounded-lg font-black text-base border-2 border-charcoal bg-amber text-charcoal hard-shadow-sm';
+        btnCks.className = 'py-2.5 px-3 rounded-lg font-black text-base border-2 border-charcoal bg-paper text-charcoal';
+      } else {
+        huashanContent.classList.add('hidden');
+        cksContent.classList.remove('hidden');
+        btnCks.className = 'py-2.5 px-3 rounded-lg font-black text-base border-2 border-charcoal bg-amber text-charcoal hard-shadow-sm';
+        btnHuashan.className = 'py-2.5 px-3 rounded-lg font-black text-base border-2 border-charcoal bg-paper text-charcoal';
+      }
+    }
+
+    // 3. 切換美食推薦分頁（九份 / 基隆 / 台北）
+    function switchFoodTab(category) {
+      const lists = {
+        jiufen: document.getElementById('food-list-jiufen'),
+        keelung: document.getElementById('food-list-keelung'),
+        taipei: document.getElementById('food-list-taipei')
+      };
+      const tabs = {
+        jiufen: document.getElementById('food-tab-jiufen'),
+        keelung: document.getElementById('food-tab-keelung'),
+        taipei: document.getElementById('food-tab-taipei')
+      };
+
+      Object.keys(lists).forEach(key => {
+        if (key === category) {
+          lists[key].classList.remove('hidden');
+          tabs[key].className = 'py-3 px-2 rounded-xl font-black text-base border-2 border-charcoal bg-crimson text-card hard-shadow-sm';
+        } else {
+          lists[key].classList.add('hidden');
+          tabs[key].className = 'py-3 px-2 rounded-xl font-black text-base border-2 border-charcoal bg-card text-charcoal';
+        }
+      });
+    }
+
+    // 4. 開啟與關閉側邊面板 (Slide-over Drawer)
+    function openDrawer(drawerId) {
+      const backdrop = document.getElementById('drawer-backdrop');
+      const drawer = document.getElementById(drawerId);
+      if (!drawer || !backdrop) return;
+
+      backdrop.classList.remove('hidden');
+      drawer.classList.remove('translate-x-full');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeAllDrawers() {
+      const backdrop = document.getElementById('drawer-backdrop');
+      const busDrawer = document.getElementById('bus-drawer');
+      const trainDrawer = document.getElementById('train-drawer');
+
+      if (backdrop) backdrop.classList.add('hidden');
+      if (busDrawer) busDrawer.classList.add('translate-x-full');
+      if (trainDrawer) trainDrawer.classList.add('translate-x-full');
+      document.body.style.overflow = '';
+    }
+
+    // 5. 互動式行李清單 (支援 LocalStorage 自動儲存與進度計算)
+    const STORAGE_KEY = 'keelung_jiufen_trip_2026_packing';
+
+    function initPackingList() {
+      const checkboxes = document.querySelectorAll('#packing-list-container input[type="checkbox"]');
+      let savedState = {};
+
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) savedState = JSON.parse(raw);
+      } catch (e) {
+        savedState = {};
+      }
+
+      checkboxes.forEach(checkbox => {
+        const id = checkbox.getAttribute('data-pack-id');
+        if (savedState[id]) {
+          checkbox.checked = true;
+        }
+        updateCheckboxVisual(checkbox);
+
+        checkbox.addEventListener('change', () => {
+          updateCheckboxVisual(checkbox);
+          savePackingState();
+          updatePackingProgress();
+        });
+      });
+
+      updatePackingProgress();
+    }
+
+    function updateCheckboxVisual(checkbox) {
+      const label = checkbox.closest('.packing-item');
+      const textSpan = label.querySelector('span');
+      if (checkbox.checked) {
+        label.classList.remove('bg-paper');
+        label.classList.add('bg-borderWarm');
+        textSpan.classList.add('line-through', 'opacity-70');
+      } else {
+        label.classList.add('bg-paper');
+        label.classList.remove('bg-borderWarm');
+        textSpan.classList.remove('line-through', 'opacity-70');
+      }
+    }
+
+    function savePackingState() {
+      const checkboxes = document.querySelectorAll('#packing-list-container input[type="checkbox"]');
+      const state = {};
+      checkboxes.forEach(cb => {
+        state[cb.getAttribute('data-pack-id')] = cb.checked;
+      });
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      } catch (e) {
+        // 忽略無痕模式儲存限制
+      }
+    }
+
+    function updatePackingProgress() {
+      const checkboxes = document.querySelectorAll('#packing-list-container input[type="checkbox"]');
+      const total = checkboxes.length;
+      let checkedCount = 0;
+      checkboxes.forEach(cb => {
+        if (cb.checked) checkedCount++;
+      });
+
+      const percent = total > 0 ? Math.round((checkedCount / total) * 100) : 0;
+      const progressText = document.getElementById('packing-progress-text');
+      const progressBar = document.getElementById('packing-progress-bar');
+
+      if (progressText) {
+        progressText.textContent = `${checkedCount} / ${total} 項 (${percent}%)`;
+      }
+      if (progressBar) {
+        progressBar.style.width = `${percent}%`;
+      }
+    }
+
+    function resetPackingList() {
+      const checkboxes = document.querySelectorAll('#packing-list-container input[type="checkbox"]');
+      checkboxes.forEach(cb => {
+        cb.checked = false;
+        updateCheckboxVisual(cb);
+      });
+      savePackingState();
+      updatePackingProgress();
+    }
+
+    // 6. 華帥海景飯店客房照片輪播 (Carousel：支援按鈕、圓點、自動輪播與手指左右滑動)
+    let currentHotelSlide = 0;
+    let hotelSlideTimer = null;
+
+    function renderHotelSlide(index) {
+      const slides = document.querySelectorAll('#hotel-carousel .hotel-slide');
+      const dots = document.querySelectorAll('#hotel-carousel .hotel-dot');
+      const counter = document.getElementById('hotel-slide-counter');
+      const total = slides.length;
+      if (total === 0) return;
+
+      currentHotelSlide = (index + total) % total;
+
+      slides.forEach((slide, i) => {
+        if (i === currentHotelSlide) {
+          slide.classList.remove('hidden');
+        } else {
+          slide.classList.add('hidden');
+        }
+      });
+
+      dots.forEach((dot, i) => {
+        if (i === currentHotelSlide) {
+          dot.className = 'hotel-dot w-6 h-3 rounded-full bg-crimson border border-charcoal transition-all';
+        } else {
+          dot.className = 'hotel-dot w-3 h-3 rounded-full bg-borderWarm border border-charcoal transition-all';
+        }
+      });
+
+      if (counter) {
+        counter.textContent = `${currentHotelSlide + 1} / ${total}`;
+      }
+    }
+
+    function changeHotelSlide(step) {
+      renderHotelSlide(currentHotelSlide + step);
+      restartHotelAutoSlide();
+    }
+
+    function goToHotelSlide(index) {
+      renderHotelSlide(index);
+      restartHotelAutoSlide();
+    }
+
+    function restartHotelAutoSlide() {
+      if (hotelSlideTimer) clearInterval(hotelSlideTimer);
+      hotelSlideTimer = setInterval(() => {
+        renderHotelSlide(currentHotelSlide + 1);
+      }, 5000);
+    }
+
+    function initHotelCarouselSwipe() {
+      const carousel = document.getElementById('hotel-carousel');
+      if (!carousel) return;
+
+      let startX = 0;
+      let endX = 0;
+
+      carousel.addEventListener('touchstart', (e) => {
+        if (e.touches && e.touches.length > 0) {
+          startX = e.touches[0].clientX;
+        }
+      }, { passive: true });
+
+      carousel.addEventListener('touchend', (e) => {
+        if (e.changedTouches && e.changedTouches.length > 0) {
+          endX = e.changedTouches[0].clientX;
+          const diff = startX - endX;
+          if (Math.abs(diff) > 40) {
+            if (diff > 0) {
+              changeHotelSlide(1); // 向左滑 -> 下一張
+            } else {
+              changeHotelSlide(-1); // 向右滑 -> 上一張
+            }
+          }
+        }
+      }, { passive: true });
+
+      renderHotelSlide(0);
+      restartHotelAutoSlide();
+    }
+
+    // 初始化
+    window.addEventListener('DOMContentLoaded', () => {
+      initPackingList();
+      initHotelCarouselSwipe();
+    });
+  </script>
+</body>
+</html>
