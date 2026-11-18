@@ -242,14 +242,24 @@
 
       <!-- 同行夥伴區塊（復古木牌／紅燈籠名牌設計，共9人） -->
       <div class="mt-6 bg-card text-charcoal rounded-xl p-4 border-2 border-amber">
-        <div class="flex items-center justify-between border-b-2 border-borderWarm pb-2 mb-3">
+        <button
+          id="companions-toggle"
+          type="button"
+          onclick="toggleCompanions()"
+          aria-expanded="true"
+          aria-controls="companions-list"
+          class="w-full flex items-center justify-between border-b-2 border-borderWarm pb-2 mb-3 text-left"
+        >
           <div class="flex items-center gap-2">
             <span class="inline-block w-3 h-3 rounded-full bg-crimson"></span>
             <h2 class="font-black text-lg tracking-wide">同行旅伴名錄</h2>
           </div>
-          <span class="stamp-badge text-xs px-2 py-0.5 rounded">全員 9 名</span>
-        </div>
-        <div class="grid grid-cols-3 gap-2.5">
+          <div class="flex items-center gap-2">
+            <span class="stamp-badge text-xs px-2 py-0.5 rounded">全員 9 名</span>
+            <span id="companions-arrow" class="text-wood font-black text-sm transition-transform">▼</span>
+          </div>
+        </button>
+        <div id="companions-list" class="grid grid-cols-3 gap-2.5">
           <!-- 9位夥伴木牌 -->
           <div class="bg-paper border-2 border-charcoal rounded-lg py-2 px-2 text-center font-bold text-base flex items-center justify-center gap-1.5 hard-shadow-sm">
             <span class="text-crimson text-sm">🏮</span><span>爸爸</span>
@@ -1455,6 +1465,21 @@
         btnDay2.className = 'py-3.5 px-4 rounded-xl font-black text-base border-2 border-charcoal bg-crimson text-card hard-shadow transition-transform active:translate-y-0.5 flex flex-col items-center justify-center';
         btnDay1.className = 'py-3.5 px-4 rounded-xl font-black text-base border-2 border-charcoal bg-card text-charcoal hard-shadow transition-transform active:translate-y-0.5 flex flex-col items-center justify-center';
       }
+    }
+
+    // 1-1. 收合／展開同行旅伴名錄
+    function toggleCompanions() {
+      const list = document.getElementById('companions-list');
+      const btn = document.getElementById('companions-toggle');
+      const arrow = document.getElementById('companions-arrow');
+      const willHide = !list.classList.contains('hidden');
+
+      list.classList.toggle('hidden', willHide);
+      btn.setAttribute('aria-expanded', String(!willHide));
+      // 收合時移除標題列下方留白，展開時復原
+      btn.classList.toggle('mb-3', !willHide);
+      btn.classList.toggle('mb-0', willHide);
+      arrow.style.transform = willHide ? 'rotate(-90deg)' : 'rotate(0deg)';
     }
 
     // 2. 切換 Day 2 台北景點二選一（華山 vs 中正紀念堂）
